@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashApp", "DashApp\DashApp.csproj", "{4E6677B3-A010-4286-AF9A-FC3DB209B288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashApp.Repsoitory", "DashApp.Repsoitory\DashApp.Repsoitory.csproj", "{86846CB2-6B40-4E9A-9D9B-3C4C58BE631F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4E6677B3-A010-4286-AF9A-FC3DB209B288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E6677B3-A010-4286-AF9A-FC3DB209B288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E6677B3-A010-4286-AF9A-FC3DB209B288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86846CB2-6B40-4E9A-9D9B-3C4C58BE631F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86846CB2-6B40-4E9A-9D9B-3C4C58BE631F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86846CB2-6B40-4E9A-9D9B-3C4C58BE631F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86846CB2-6B40-4E9A-9D9B-3C4C58BE631F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
