@@ -27,6 +27,5 @@ namespace DashApp.Repsoitory
     
         public virtual DbSet<UserProfile> UserProfiles { get; set; }
 
-
     }
 }

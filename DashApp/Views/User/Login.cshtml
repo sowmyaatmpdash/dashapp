@@ -19,16 +19,16 @@
         <div class="form-group">
             @Html.LabelFor(model => model.UserEmailId, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UserEmailId, new { htmlAttributes = new { @class = "form-control emailclass" } })
-                @Html.ValidationMessageFor(model => model.UserEmailId, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.UserEmailId, new { htmlAttributes = new { @class = "form-control emailclass", id = "textboxEmailAddress" } })
+                <div type="text" hidden class="col-md-10 " id="emailvalidationmessage"></div>
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.Password, new { htmlAttributes = new { @class = "form-control password", id = "textboxpassword" } })
+                <p id="passwordvalidationmessage"></p>
             </div>
         </div>
 
@@ -77,17 +77,22 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2",  id = "textboxaddress" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                <div id="addressvalidationmessage"></div>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-                <input type="button" value="ExistingUser" class="btn btn-default" id="ExistingUser" data-toggle="modal" data-target="#myModal"/>
+                <input type="submit" value="Create" class="btn btn-default" id="button-save" />
+                <input type="button" value="ExistingUser" class="btn btn-default" id="ExistingUser" data-toggle="modal" data-target="#myModal" />
+
+                <button id="btnShowModal" type="button" value="ExistingUser"
+                        class="btn btn-sm btn-default ">
+                    Existing User
+                </button>
             </div>
         </div>
     </div>
